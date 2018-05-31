@@ -8,8 +8,8 @@ const Navigation = props => (
             <div className="collapse navbar-collapse">
                 <ul className="navbar-nav">
                     <li className="nav-item"><Link className="nav-link" to="/countries">Countries</Link></li>
-                    <li className="nav-item"><Link  className="nav-link"to="/continents">Countinents</Link></li>
-                    <li className="nav-item"><Link className="nav-link"to="/contact">Countact</Link></li>
+                    <li className="nav-item"><Link  className="nav-link"to="/continents">Continents</Link></li>
+                    <li className="nav-item"><Link className="nav-link"to="/contact">Contact</Link></li>
                 </ul>
             </div>
         </nav>
