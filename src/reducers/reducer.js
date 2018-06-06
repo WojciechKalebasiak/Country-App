@@ -12,8 +12,9 @@ const countriesReducer = (state = initialState, action) => {
         case GET_COUNTRIES:
             return Object.assign({}, state, { countries: state.countries });
         case GET_COUNTRY:
-            const selectedCountry = state.countries.find(country => country.id === action.id);
+            const selectedCountry = state.countries.find(country => country.id === parseInt(action.id));
             return Object.assign({}, state, { selectedCountry });
+            console.log('xd');
         case SEARCH_COUNTRIES:
             const foundCountries = state.countries.filter(country => country.name.toLowerCase().includes(action.searchText.toLowerCase()));
             return Object.assign({}, state, { visibleCountries: foundCountries });
